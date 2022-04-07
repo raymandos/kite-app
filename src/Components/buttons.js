@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 
-const btnblockdanger = ({
+const BtnBlockDanger = ({
     children,
     title,
     type = 'button',
@@ -22,14 +22,14 @@ const btnblockdanger = ({
     )
 }
 
-btnblockdanger.propTypes = {
+BtnBlockDanger.propTypes = {
     children: PropTypes.any,
     title: PropTypes.string,
     type: PropTypes.string,
     onClick: PropTypes.func
 }
 
-const btnolinedanger = ({
+const BtnOlineDanger = ({
     children,
     title,
     type = 'button',
@@ -51,14 +51,14 @@ const btnolinedanger = ({
     )
 }
 
-btnolinedanger.propTypes = {
+BtnOlineDanger.propTypes = {
     children: PropTypes.any,
     title: PropTypes.string,
     type: PropTypes.string,
     onClick: PropTypes.func
 }
 
-const btnblockprimary = ({
+const BtnBlockPrimary = ({
     children,
     title,
     type = 'button',
@@ -80,14 +80,14 @@ const btnblockprimary = ({
     )
 }
 
-btnblockprimary.propTypes = {
+BtnBlockPrimary.propTypes = {
     children: PropTypes.any,
     title: PropTypes.string,
     type: PropTypes.string,
     onClick: PropTypes.func
 }
 
-const btnblockwarning = ({
+const BtnBlockWarning = ({
     children,
     title,
     type = 'button',
@@ -109,14 +109,14 @@ const btnblockwarning = ({
     )
 }
 
-btnblockwarning.propTypes = {
+BtnBlockWarning.propTypes = {
     children: PropTypes.any,
     title: PropTypes.string,
     type: PropTypes.string,
     onClick: PropTypes.func
 }
 
-const btnolinedanger = ({
+const BtnOlineDanger = ({
     children,
     title,
     type = 'button',
@@ -138,14 +138,14 @@ const btnolinedanger = ({
     )
 }
 
-btnolinedanger.propTypes = {
+BtnOlineDanger.propTypes = {
     children: PropTypes.any,
     title: PropTypes.string,
     type: PropTypes.string,
     onClick: PropTypes.func
 }
 
-const btnolinesecondary = ({
+const BtnOlineSecondary = ({
     children,
     title,
     type = 'button',
@@ -167,14 +167,14 @@ const btnolinesecondary = ({
     )
 }
 
-btnolinesecondary.propTypes = {
+BtnOlineSecondary.propTypes = {
     children: PropTypes.any,
     title: PropTypes.string,
     type: PropTypes.string,
     onClick: PropTypes.func
 }
 
-const btnprimary = ({
+const BtnPrimary = ({
     children,
     title,
     type = 'button',
@@ -196,14 +196,14 @@ const btnprimary = ({
     )
 }
 
-btnprimary.propTypes = {
+BtnPrimary.propTypes = {
     children: PropTypes.any,
     title: PropTypes.string,
     type: PropTypes.string,
     onClick: PropTypes.func
 }
 
-const btnsimpledanger = ({
+const BtnSimpleDanger = ({
     children,
     title,
     type = 'button',
@@ -225,14 +225,14 @@ const btnsimpledanger = ({
     )
 }
 
-btnsimpledanger.propTypes = {
+BtnSimpleDanger.propTypes = {
     children: PropTypes.any,
     title: PropTypes.string,
     type: PropTypes.string,
     onClick: PropTypes.func
 }
 
-const btnsimplelargedanger = ({
+const BtnSimpleLargeDanger = ({
     children,
     title,
     type = 'button',
@@ -254,14 +254,14 @@ const btnsimplelargedanger = ({
     )
 }
 
-btnsimplelargedanger.propTypes = {
+BtnSimpleLargeDanger.propTypes = {
     children: PropTypes.any,
     title: PropTypes.string,
     type: PropTypes.string,
     onClick: PropTypes.func
 }
 
-const btnsimplelargesecondary = ({
+const BtnSimpleLargeSecondary = ({
     children,
     title,
     type = 'button',
@@ -283,7 +283,7 @@ const btnsimplelargesecondary = ({
     )
 }
 
-btnsimplelargesecondary.propTypes = {
+BtnSimpleLargeSecondary.propTypes = {
     children: PropTypes.any,
     title: PropTypes.string,
     type: PropTypes.string,
@@ -291,7 +291,8 @@ btnsimplelargesecondary.propTypes = {
 }
 
 export default {
-    btnblockdanger, btnolinedanger, btnblockprimary, btnblockwarning, btnolinedanger, btnolinesecondary, ...
-        btnprimary, btnsimpledanger, btnsimplelargedanger, btnsimplelargesecondary
+    BtnBlockDanger
+    , BtnOlineDanger, BtnBlockPrimary, BtnBlockWarning, BtnOlineDanger, BtnOlineSecondary, ...
+    BtnPrimary, BtnSimpleDanger, BtnSimpleLargeDanger, BtnSimpleLargeSecondary
 }
 
