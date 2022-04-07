@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types'
-import btnsimpledanger from '../buttons'
+import BtnSimpleDanger from './Buttons/BtnSimpleDanger'
 
-const DropdownNavbarUser = ({ showUserMenu, setAuthenticatedUserName }) => {
+const DropNavbar = ({ showUserMenu, setAuthenticatedUserName }) => {
     return (
         <div>
             {showUserMenu ? (
                 <div className="absolute top-10 right-0 bg-white shadow-lg rounded-xl overflow-hidden p-1">
-                    <btnsimpledanger
+                    <BtnSimpleDanger
                         title="Log out"
                         onClick={() => {
                             localStorage.removeItem('userId')
@@ -19,7 +19,7 @@ const DropdownNavbarUser = ({ showUserMenu, setAuthenticatedUserName }) => {
                             <path d="M0 0h24v24H0V0z" fill="none" />
                             <path d="M10.09 15.59L11.5 17l5-5-5-5-1.41 1.41L12.67 11H3v2h9.67l-2.58 2.59zM19 3H5c-1.11 0-2 .9-2 2v4h2V5h14v14H5v-4H3v4c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z" />
                         </svg>
-                    </btnsimpledanger>
+                    </BtnSimpleDanger>
                 </div>
             ) : (
                 ''
@@ -28,9 +28,9 @@ const DropdownNavbarUser = ({ showUserMenu, setAuthenticatedUserName }) => {
     )
 }
 
-DropdownNavbarUser.propTypes = {
+DropNavbar.propTypes = {
     showUserMenu: PropTypes.bool,
     setAuthenticatedUserName: PropTypes.func
 }
 
-export default DropdownNavbarUser
+export default DropNavbar

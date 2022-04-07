@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types'
 import { MapContainer, TileLayer, ZoomControl, Marker, Popup } from 'react-leaflet'
-import { iconMarkerRed } from '../../Resources/iconMarkerRed'
-import { iconMarkerYellow } from '../../Resources/iconMarkerYellow'
-import BtnBlockDanger from '../buttons'
-import BtnBlockWarning from '../buttons'
+import { iconMarkerRed } from '../Resources/iconMarkerRed'
+import { iconMarkerYellow } from '../Resources/iconMarkerYellow'
+import BtnBlockDanger from './Buttons/BtnBlockDanger'
+import BtnBlockWarning from './Buttons/BtnBlockWarning'
 
 const Map = ({
     spots,

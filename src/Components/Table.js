@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import { columns } from '../../Resources/listColumns'
+import { columns } from '../Resources/listColumns'
 
 const Table = ({
     spots,

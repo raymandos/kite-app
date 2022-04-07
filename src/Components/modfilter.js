@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
-import BtnOlineSecondary from '../buttons'
-import WrapperInputUnderlinedSmall from '../WrapperInputUnderlinedSmall'
+import BtnOlineSecondary from './Buttons/BtnOlineSecondary'
+import WrapperInputUnderlinedSmall from './Wrappers/WrapperInputUnderlinedSmall'
 
 const ModFilter = ({
     filterCountry,

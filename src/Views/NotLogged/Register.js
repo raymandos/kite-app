@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import { Link, useHistory } from "react-router-dom"
 import PropTypes from 'prop-types'
-import BtnPrimary from '../../Components/buttons'
-import LinkOutlineSecondary from '../../Components/links'
-import WrapperForm from '../../Components/wrappers'
-import WrapperInput from '../../Components/wrappers'
+import BtnPrimary from '../../Components/Buttons/BtnPrimary'
+import LinkOutlineSecondary from '../../Components/Links/LinkOutlineSecondary'
+import WrapperForm from '../../Components/Wrappers/WrapperForm'
+import WrapperInput from '../../Components/Wrappers/WrapperInput'
 
 const Register = ({
     users,

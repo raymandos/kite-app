@@ -2,11 +2,11 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import AddItem from './AddItem'
-import BtnPrimary from '../buttons'
-import BtnBlockPrimary from '../buttons'
-import BtnOlineDanger from '../buttons'
-import WrapperNavbarResponsiveButtons from '../wrappers'
-import DropNavbar from '../dropnavbar'
+import BtnPrimary from './Buttons/BtnPrimary'
+import BtnBlockPrimary from './Buttons/BtnBlockPrimary'
+import BtnOlineDanger from './Buttons/BtnOlineDanger'
+import WrapperNavbarResponsiveButtons from './Wrappers/WrapperNavbarResponsiveButtons'
+import DropNavbar from './dropnavbar'
 
 const Navbar = ({
     authenticatedUserName,

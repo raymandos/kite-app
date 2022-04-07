@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
-import BtnSimpleLargeSecondary from '../buttons'
-import BtnSimpleLargeDanger from '../buttons'
-import ModFilter from '../modfilter'
+import BtnSimpleLargeSecondary from './Buttons/BtnSimpleLargeSecondary'
+import BtnSimpleLargeDanger from './Buttons/BtnSimpleLargeDanger'
+import ModFilter from './modfilter'
 
 const MenuFilter = ({
     spots,

@@ -6,12 +6,12 @@ import {
     MuiPickersUtilsProvider,
 } from '@material-ui/pickers'
 import Select from 'react-select'
-import { countries as listCountries } from '../../Resources/listCountries'
-import LabelUnderlined from '../labels'
-import BtnPrimary from '../buttons'
-import BtnOlineDanger from '../buttons'
-import MapSelect from '../mapselect'
-import WrapperInputUnderline from '../wrappers'
+import { countries as listCountries } from '../Resources/listCountries'
+import LabelUnderlined from './Labels/LabelUnderlined'
+import BtnPrimary from './Buttons/BtnPrimary'
+import BtnOlineDanger from './Buttons/BtnOlineDanger'
+import MapSelect from './mapselect'
+import WrapperInputUnderlined from './Wrappers/WrapperInputUnderlined'
 
 const AddItem = ({
     showModalAddItem,
@@ -58,7 +58,7 @@ const AddItem = ({
                                     Add Spot
                                 </span>
                                 <div className="space-y-2">
-                                    <WrapperInputUnderline
+                                    <WrapperInputUnderlined
                                         id="name"
                                         title="Name"
                                         onChange={(e) => setName(e.target.value)}

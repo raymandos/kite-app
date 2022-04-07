@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
-import ButtonPrimary from '../../Components/buttons'
-import LinkOutlineSecondary from '../../Components/links'
-import WrapperForm from '../../Components/wrappers'
-import WrapperInput from '../../Components/wrappers'
+import BtnPrimary from '../../Components/Buttons/BtnPrimary'
+import LinkOutlineSecondary from '../../Components/Links/LinkOutlineSecondary'
+import WrapperForm from '../../Components/Wrappers/WrapperForm'
+import WrapperInput from '../../Components/Wrappers/WrapperInput'
 
 const Login = ({
     fetchSession,
@@ -92,7 +92,7 @@ const Login = ({
 
                 <div className="flex items-center justify-end space-x-3 p-3 bg-gray-50 text-right">
                     <LinkOutlineSecondary to='/register' title="Register" />
-                    <ButtonPrimary title="Log in" type="submit" />
+                    <BtnPrimary title="Log in" type="submit" />
                 </div>
             </form>
         </WrapperForm>
