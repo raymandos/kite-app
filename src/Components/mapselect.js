@@ -3,7 +3,7 @@ import { MapContainer, TileLayer, ZoomControl } from 'react-leaflet'
 const MapSelect = () => {
     return (
         <MapContainer center={[35, -95]} zoom={4}
-            scrollWheelZoom={false}
+            scrollWheelZoom={true}
             zoomControl={false}
             className="w-full h-48 z-0"
         >

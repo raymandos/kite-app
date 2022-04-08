@@ -1,9 +1,15 @@
 import PropTypes from 'prop-types'
 import { MapContainer, TileLayer, ZoomControl, Marker, Popup } from 'react-leaflet'
+import { useMemo, useState } from 'react'
 import { iconMarkerRed } from '../Resources/iconMarkerRed'
 import { iconMarkerYellow } from '../Resources/iconMarkerYellow'
 import BtnBlockDanger from './Buttons/BtnBlockDanger'
 import BtnBlockWarning from './Buttons/BtnBlockWarning'
+
+const bounds = [
+    [-122.66336, 37.492987], // Southwest coordinates
+    [-122.250481, 37.871651] // Northeast coordinates
+];
 
 const Map = ({
     spots,
@@ -11,14 +17,17 @@ const Map = ({
     deleteFavourite
 }) => {
     return (
-        <MapContainer center={[35, 0]} zoom={3} scrollWheelZoom={false}
+        <MapContainer center={[35, 0]} zoom={3} scrollWheelZoom={true}
             zoomControl={false}
             className="min-w-screen z-0"
             style={{ height: '70vh' }}
+            bounds={bounds}
+
         >
             <TileLayer
                 attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                noWrap={true}
             />
             <ZoomControl position="bottomright" zoomInText="+" zoomOutText="-" />
             {

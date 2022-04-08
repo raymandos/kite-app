@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import PropTypes from 'prop-types'
 import DateFnsUtils from '@date-io/date-fns'
+import Select from 'react-select'
 import {
     DatePicker,
     MuiPickersUtilsProvider,
 } from '@material-ui/pickers'
-import Select from 'react-select'
 import { countries as listCountries } from '../Resources/listCountries'
 import LabelUnderlined from './Labels/LabelUnderlined'
 import BtnPrimary from './Buttons/BtnPrimary'

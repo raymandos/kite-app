@@ -20,7 +20,7 @@ const Login = ({
         e.preventDefault()
 
         if (!email || !password) {
-            alert('Please complete all fields.')
+            alert('Please insert both e-mail and password.')
             return
         }
 
