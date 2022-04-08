@@ -22,3 +22,7 @@ Application made with React for Atta Systems' internship recruitment process, th
 ## 📱 Running the app
 - Open a terminal inside the code base and run `npm start`
 - (Optional: If changing styling) Open a 2nd terminal and inside run `npm run dev:tailwind`
+-You can also preview the project in Vercel using the link https://atta-kite.vercel.app/
+-Test data may be used to log in or by using the register feature to create a new session:
+-E-mail: test@test.com
+-Password: test
