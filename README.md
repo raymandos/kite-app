@@ -20,6 +20,5 @@ Application made with React for Atta Systems' internship recruitment process, th
 - Installation Completed!
 
 ## 📱 Running the app
-- Open a terminal inside the code base and run `expo start`
-- Scan the QR code shown in the terminal with your phone or launch the virtual phone option
+- Open a terminal inside the code base and run `npm start`
 - (Optional: If changing styling) Open a 2nd terminal and inside run `npm run dev:tailwind`
